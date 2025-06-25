@@ -47,7 +47,7 @@
             </div>
                 <hr>
                 <div> 
-                    <label>Length:</label>
+                    <label>Price (from-to):</label>
                     <input type="number" min="0" name="lenght" step="0.01">
                     <input type="number" max="20" name="lenght" step="0.01">
                 </div>
@@ -64,7 +64,7 @@
                     <input
                         type="range"
                         id="Length"
-                        name="length"
+                        name="lenght"
                         min="0"
                         max="100"
                         value="90"
@@ -78,14 +78,78 @@
             
             <div>
                 <label>Price (from-to):</label>
-                <input type="number" min="0" step="0.01" name="price-first">
-                <input type="number" max="1000" step="0.01" name="price-last">
+                <input type="number" min="0" step="0.01" name="price-first" value="o" required>
+                <input type="number" max="1000" step="0.01" name="price-last" value="1000" required>
             </div>
              <div>
                 <label>Price (from-to):</label>
-                <input type="range" min="0" step="0.01" name="price-first">
-                <input type="range" max="1000" step="0.01" name="price-last">
+                <input type="number" min="0" step="0.01" name="price-first">
+                <input type="number" max="1000" step="0.01" name="price-last">
+            </div>
+            <div>
+                <input id="in-stock" type="checkbox" value="true" name="vf">
+                <labelfor="in-stock">In stock</label>
+            </div>
+            <div>
+                <label><input type="checkbox" value="5" name="rating[]">5</label>
+                <label><input type="checkbox" value="4" name="rating[]">4</label>
+                <label><input type="checkbox" value="3" name="rating[]">3</label>
+                <label><input type="checkbox" value="2" name="rating[]">2</label>
+                <label><input type="checkbox" value="1" name="rating[]">1</label>
+            </div>
+            <div>
+                <button type="submit">Search</button>
+            </div>
+            <hr>
+            <div>
+                <label><input type="checkbox" value="Black" name="feature-45225[]">Black</label>
+                <label><input type="checkbox" value="Blue" name="feature-45225[]">Blue</label>
+            </div>
+            <!--Headphones-->
+        </form>
+        <hr>
+        <form action="https://www.thomann.de/intl/headphones_studio_headphones.html" method="get">
+            <div>
+                <label><h1>Replacable cable</h1></label>
+                <label><input type="radio" value="true" name="feature-50863">Yes</label>
+                <label><input type="radio" value="false" name="feature-50863">No</label>
+                <label><input type="radio" value="" name="feature-50863">All</label>
+            </div>
+            <div>
+                <button type="submit">Search</button>
             </div>
         </form>
+        <!--Vježba-->
+        <hr>
+         <form action="https://www.thomann.de/intl/headphones_studio_headphones.html" metod="get">
+            <div>
+                <label>Price range</label>
+                <input type="number" min="0" step="0.01" name="price-first" value="o" required>
+                <input type="number" max="1000" step="0.01" name="price-last" value="1000">
+            </div>
+        <hr>
+        </form>
+        <hr>
+        <form action="https://www.thomann.de/intl/headphones_studio_headphones.html" metod="get">
+            <div>
+                <label>Availability</label>
+                <input id="in-stock" type="checkbox" value="true" name="vf">
+                <labelfor="in-stock">In stock</label>
+            </div>
+            <div>
+                <label>Ratings</label>
+                <label><input type="checkbox" value="5" name="rating[]">5</label>
+                <label><input type="checkbox" value="4" name="rating[]">4</label>
+                <label><input type="checkbox" value="3" name="rating[]">3</label>
+                <label><input type="checkbox" value="2" name="rating[]">2</label>
+                <label><input type="checkbox" value="1" name="rating[]">1</label>
+            </div>
+            <form action="https://www.thomann.de/intl/headphones_studio_headphones.html" metod="get">
+            <div>
+                <input type="reset"></input>
+            </div>
+            <div>
+                <button type="submit">Search</button>
+            </div>
     </body>
 </html>
